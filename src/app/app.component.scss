@@ -1,18 +1,23 @@
 .layout {
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
   margin: 0 50px;
 
   .header {}
 
   .body {
     // font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
+
+
+    .divider {
+      padding: 20px 0;
     }
 
-    .example-full-width {
-      width: 100%;
+    .posts-container {
+
     }
+
+
   }
 }

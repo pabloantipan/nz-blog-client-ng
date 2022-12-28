@@ -1,0 +1,16 @@
+.post-create-container {
+  // display: flex;
+  // gap: 20px;
+  // border: 1px solid blue;
+  width: 100%;
+
+  .posts-input-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .input-full-width {
+    width: 100%;
+  }
+}

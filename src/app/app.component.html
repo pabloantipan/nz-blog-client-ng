@@ -1,20 +1,16 @@
 <div class="layout">
   <div class="header"></div>
   <div class="body">
-    <h1>Create a post</h1>
 
-    <form class="example-form">
+    <app-post-create></app-post-create>
 
-      <mat-form-field class="example-full-width">
-        <mat-label>Favorite food</mat-label>
-        <input matInput placeholder="Ex. Pizza" value="Sushi">
-      </mat-form-field>
+    <div class="divider">
+      <mat-divider></mat-divider>
+    </div>
 
-      <mat-form-field class="example-full-width">
-        <mat-label>Leave a comment</mat-label>
-        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-      </mat-form-field>
-    </form>
+    <div class="posts-container">
+      <app-posts></app-posts>
+    </div>
 
     <router-outlet></router-outlet>
   </div>

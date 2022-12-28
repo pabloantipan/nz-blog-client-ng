@@ -1,0 +1,27 @@
+<div class="post-container">
+  <mat-card>
+    <mat-card-title>{{ data.title }}</mat-card-title>
+    <mat-card-subtitle>Title</mat-card-subtitle>
+
+
+    <form class="comment-input-form" [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="input-full-width">
+        <mat-label>Write a comment</mat-label>
+        <input matInput placeholder="Cool Post" value="" formControlName="commentText">
+      </mat-form-field>
+      <button mat-raised-button color="primary">Submit</button>
+    </form>
+
+    <div class="comments-container">
+      <h3>Comments:</h3>
+      <div class="comments-item" *ngFor="let comment of comments">
+        - {{ comment.content }}
+      </div>
+    </div>
+
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
